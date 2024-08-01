@@ -1,20 +1,13 @@
 'use strict';
 
-import { should } from 'chai';
-should();
-import { readFileSync } from 'fs';
-import { posix } from 'path';
-const { join } = posix;
-import { sep } from 'path';
-import Renderer from '../lib/renderer.mjs';
+require('chai').should();
+const { readFileSync } = require('fs');
+const { join } = require('path').posix;
+const { sep } = require('path');
+const Renderer = require('../lib/renderer');
 const source = readFileSync('./test/fixtures/markdownit.md', 'utf8');
-import Hexo from 'hexo';
-import hexoUtil from 'hexo-util';
-const { url_for } = hexoUtil;
-import { fileURLToPath } from 'url';
-import { dirname } from 'path';
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
+const Hexo = require('hexo');
+const { url_for } = require('hexo-util');
 
 describe('Hexo Renderer Markdown-it', () => {
   const hexo = new Hexo(__dirname, { silent: true });

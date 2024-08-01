@@ -2,10 +2,10 @@
   "name": "hexo-renderer-markdown-it",
   "version": "7.1.1",
   "description": "Markdown-it is a Markdown parser, done right. A faster and CommonMark compliant alternative for Hexo.",
-  "main": "index.mjs",
+  "main": "index.js",
   "scripts": {
     "eslint": "eslint .",
-    "test": "mocha test/index.mjs",
+    "test": "mocha test/index.js",
     "test-cov": "c8 --reporter=lcovonly npm run test"
   },
   "repository": "hexojs/hexo-renderer-markdown-it",
@@ -20,7 +20,7 @@
     "lib": "./lib"
   },
   "files": [
-    "index.mjs",
+    "index.js",
     "lib/"
   ],
   "author": "Celso Miranda <contacto@celsomiranda.net> (http://celsomiranda.net/)",
@@ -32,7 +32,7 @@
   "homepage": "https://github.com/hexojs/hexo-renderer-markdown-it",
   "dependencies": {
     "hexo-util": "^3.0.1",
-    "markdown-it": "^14.0.0",
+    "markdown-it": "^14.1.0",
     "markdown-it-abbr": "^2.0.0",
     "markdown-it-attrs": "^4.1.6",
     "markdown-it-cjk-breaks": "^2.0.0",
